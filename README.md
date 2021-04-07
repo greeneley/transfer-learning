@@ -1,88 +1,38 @@
-# Repo Template
+# <Replace Title> <!-- Rename this to the <Replace Title> of the repository -->
 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/orbitdb/Lobby) [![Matrix](https://img.shields.io/badge/matrix-%23orbitdb%3Apermaweb.io-blue.svg)](https://riot.permaweb.io/#/room/#orbitdb:permaweb.io) 
+<!-- [![npm version](https://badge.fury.io/js/<Replace Title>.svg)](https://www.npmjs.com/package/<Replace Title>) -->
+<!-- [![node](https://img.shields.io/node/v/<Replace Title>.svg)](https://www.npmjs.com/package/<Replace Title>) -->
 
-> A template for creating new repositories in the @orbitdb organization
+> Transfer Learning là kỹ thuật tái sử dụng lại các model đã được training sẵn nhằm tiết kiệm thời gian phải training lại từ đầu <!-- This should match the GitHub description -->
 
-This repository is meant to serve as a general template for how to set up new repositories in the @orbitdb organization. In general, setting up a new repository should take only a few minutes; use this repository as a way of finding example files, and use the following checklist to ensure that you've set up the repository correctly.
+Repo này dựa trên sự hướng dẫn của chuyên gia AI [Ngoc Ba](https://developers.google.com/community/experts/directory/profile/profile-ngoc_ba).
+
+Link hướng dẫn: [Youtube](https://www.youtube.com/watch?v=Y-4KLFt_c6Y)
+<!-- More description as needed -->
 
 ## Install
 
-These instructions are basic; you can use any method to do this work. The important part is making sure that you follow the checklist below before publishing the repository.
+Project này sử dụng Jupyter Notebook 
 
-```sh
-# Let's make a new folder
-mkdir new-repo && cd new-repo
-# Start a Git instance and copy over template files.
-git init
-cp ../repo-template/* .
-# Overwrite this README
-mv README.md setup-checklist.md
-mv example-README.md README.md
-# Go over and check off the checklist, and finally
-rm setup-checklist
+## Usage
+
+```python
+jupyter notebook main.ipynb
 ```
 
-## Checklist
-
-Go through this checklist after creating your repository. It should only take a couple of minutes; if there is a way to make this more efficient, open an issue and let's talk about it here! \m/
-
-### README
-- [ ] Copy `example-README.md` from this repository to your directory.
-- [ ] Rename all instances of `<Replace Title>` in README to match the new repo title
-- [ ] Manually go through and edit the rest of the README.
-
-### Other Files
-- [ ] Copy `CODE_OF_CONDUCT.md` verbatim.
-- [ ] Copy `CONTRIBUTING.md` and ensure that you've added any repository-specific instructions. (Replace `<Replace Title>` again).
-- [ ] Should you have a `CHANGELOG.md`? Document your release process, if you plan on having one, in the `CONTRIBUTING.md` file.
-
-### Dotfiles
-- [ ] Do you need a `.gitignore` file?
-- [ ] Do you need an `.npmignore` file?
-
-### License
-- [ ] Copy the MIT license from the example repo.
-- [ ] Is `Haja Networks Oy` the licensor?
-- [ ] Have you added `MIT` as the license in the `package.json`?
-- [ ] If you made changes, were these reflected in the last section of the README?
-
-### GitHub Metadata
-- [ ] Have you added a short description to the repository?
-  - [ ] Is the description matched in the byline under the title in the README?
-- [ ] Have you added topics to the GitHub repository: `orbitdb`, `orbit`, and so on?
-  - [ ] Have you added these topics as keywords in the `package.json`?
-
-### `package.json`
-
-- [ ] Is the `author` field correct?
-- [ ] Have you added `keywords`?
-- [ ] Are the `bugs` and `homepage` fields correct?
-- [ ] Have you added tests? Are they matched, here?
-- [ ] Have you added a `lint` command, if using [`eslint-config-orbitdb`](https://github.com/orbitdb/eslint-config-orbitdb)?
-
-### Tests
-
-- [ ] Are there automated tests?
-- [ ] ...for the browser as well?
-- [ ] Are those reflected in CI?
-- [ ] Bonus points: Using CircleCI workflows to segment tests?
-- [ ] Extra bonus points: Are you cross-testing dependencies (i.e. are changes in `orbit-db-keystore` tested in `orbit-db` as well
-
-### Benchmarks
-- [ ] Are there benchmarks?
-- [ ] Did you run the benchmarks before / after the change or PR?
-
-### Examples
-- [ ] Is there an example folder with usage examples?
-- [ ] For the browser as well?
+<!-- Add any exported methods here. You can also create an API section. -->
 
 ## Contribute
 
-If you think this could be better, please [open an issue](https://github.com/orbitdb/repo-template/issues/new)!
+We would be happy to accept PRs! If you want to work on something, it'd be good to talk beforehand to make sure nobody else is working on it. You can reach us [on Gitter](https://gitter.im/orbitdb/Lobby), or in the [issues section](https://github.com/orbitdb/<Replace Title>/issues).
 
-Please note that all interactions in [@OrbitDB](https://github.com/orbitdb) fall under our [Code of Conduct](CODE_OF_CONDUCT.md).
+We also have **regular community calls**, which we announce in the issues in [the @orbitdb welcome repository](https://github.com/orbitdb/welcome/issues). Join us!
+
+If you want to code but don't know where to start, check out the issues labelled ["help wanted"](https://github.com/orbitdb/<Replace Title>/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+sort%3Areactions-%2B1-desc).
+
+For specific guidelines for contributing to this repository, check out the [Contributing guide](CONTRIBUTING.md). For more on contributing to OrbitDB in general, take a look at the [@OrbitDB welcome repository](https://github.com/orbitdb/welcome). Please note that all interactions in [@OrbitDB](https://github.com/orbitdb) fall under our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
-[MIT](LICENSE) © 2018 Haja Networks Oy
+[MIT](LICENSE) © 2019 Haja Networks Oy
